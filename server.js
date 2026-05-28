@@ -58,7 +58,9 @@ client.on('disconnected', reason => {
   console.log('WhatsApp desconectado:', reason);
 });
 
-client.initialize();
+setTimeout(() => {
+  client.initialize();
+}, 5000);
 
 app.get('/', async (req, res) => {
   res.send({
