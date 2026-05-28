@@ -17,7 +17,7 @@ const client = new Client({
     clientId: 'crm-engine'
   }),
   puppeteer: {
-    headless: new,
+    headless: "new",
     args: [
     '--no-sandbox',
   '--disable-setuid-sandbox',
