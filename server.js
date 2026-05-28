@@ -17,16 +17,14 @@ const client = new Client({
     clientId: 'crm-engine'
   }),
   puppeteer: {
-    headless: true,
+    headless: new,
     args: [
-      '--no-sandbox',
-      '--disable-setuid-sandbox',
-      '--disable-dev-shm-usage',
-      '--disable-accelerated-2d-canvas',
-      '--no-first-run',
-      '--no-zygote',
-      '--single-process',
-      '--disable-gpu'
+    '--no-sandbox',
+  '--disable-setuid-sandbox',
+  '--disable-dev-shm-usage',
+  '--disable-accelerated-2d-canvas',
+  '--disable-gpu',
+  '--window-size=1920,1080'
     ]
   }
 });
