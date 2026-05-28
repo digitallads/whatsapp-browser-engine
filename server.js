@@ -18,6 +18,9 @@ const client = new Client({
   }),
   puppeteer: {
     headless: "new",
+    handleSIGINT: false,
+handleSIGTERM: false,
+handleSIGHUP: false,
     args: [
     '--no-sandbox',
   '--disable-setuid-sandbox',
