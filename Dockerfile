@@ -1,7 +1,7 @@
 FROM node:20
 
 RUN apt-get update && apt-get install -y \
-    chromium \
+    chromium chromium-driver \
     fonts-liberation \
     libatk-bridge2.0-0 \
     libatk1.0-0 \
